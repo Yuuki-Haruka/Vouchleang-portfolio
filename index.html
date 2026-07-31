@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Tan Vouchleang | Data Science Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        (function () {
+            var saved = localStorage.getItem('vl-theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+        })();
+    </script>
+</head>
+
+<body class="grid-bg">
+    <div class="orb w-80 h-80 bg-pink-300"></div>
+    <div class="orb w-72 h-72 bg-blue-300"></div>
+    <header class="sticky top-0 z-50 glass">
+        <nav class="max-w-7xl mx-auto px-5 py-4 flex items-center justify-between"><a href="#index"
+                class="text-xl font-black tracking-tight">Vouch<span class="text-purple-500">leang</span></a>
+            <div class="desktop-nav flex items-center gap-2 text-sm text-gray-700">
+                <a href="#index" class="nav-link px-4 py-2 rounded-xl">Home</a>
+                <a href="#about" class="nav-link px-4 py-2 rounded-xl">About Me</a>
+                <a href="#education" class="nav-link px-4 py-2 rounded-xl">Education</a>
+                <a href="#skills" class="nav-link px-4 py-2 rounded-xl">Skills</a>
+                <a href="#projects" class="nav-link px-4 py-2 rounded-xl">Project</a>
+                <a href="#contact" class="nav-link px-4 py-2 rounded-xl">Contact</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden md:inline-flex btn-primary px-5 py-2.5 rounded-xl font-bold text-sm">
+                    Hire Me ✦
+                </a>
+                <div class="text-gray-600 text-sm hidden md:flex items-center gap-2">
+                    <span id="time"></span>
+                    <span class="text-gray-400">|</span>
+                    <span id="date"></span>
+                </div>
+                <button type="button" class="theme-toggle-btn glass" aria-label="Toggle dark mode">
+                    <i class="theme-icon fa-solid fa-moon"></i>
+                </button>
+                <button type="button" data-menu-btn class="menu-btn glass" aria-label="Toggle menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+        <div data-mobile-menu class="mobile-menu px-5 pb-4 text-gray-700">
+            <a class="block py-2" href="#index">Home</a>
+            <a class="block py-2" href="#about">About Me</a>
+            <a class="block py-2" href="#education">Education</a>
+            <a class="block py-2" href="#skills">Skills</a>
+            <a class="block py-2" href="#projects">Project</a>
+            <a class="block py-2" href="#contact">Contact</a>
+        </div>
+    </header>
+    <main>
+        <section class="relative min-h-[88vh] max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-2 gap-12 items-center" id="index">
+            <div class="reveal">
+                <div class="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm text-purple-700 mb-8">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> Open to data science
+                    opportunities
+                </div>
+                <h1 class="hero-title text-6xl md:text-7xl font-black leading-tight">Hi, I’m <span
+                        class="gradient-text">Vouchleang</span></h1>
+                <p class="mt-5 text-lg text-gray-600 max-w-xl">Data Science Student at Institute of Technology of
+                    Cambodia, passionate about turning raw data into clear insights and useful digital products.</p>
+                <div class="mt-8 flex flex-wrap gap-4"><a href="#projects"
+                        class="btn-primary px-6 py-3 rounded-2xl font-bold transition">View My Work ✦</a><a
+                        href="#contact" class="btn-ghost glass px-6 py-3 rounded-2xl font-bold transition">Get In
+                        Touch →</a></div>
+                <div class="mt-8 flex flex-wrap gap-3 text-sm mono text-purple-800"><span
+                        class="glass px-4 py-2 rounded-xl">Python</span><span
+                        class="glass px-4 py-2 rounded-xl">R</span><span class="glass px-4 py-2 rounded-xl">C /
+                        C++</span><span class="glass px-4 py-2 rounded-xl">MySQL</span><span
+                        class="glass px-4 py-2 rounded-xl">HTML & CSS & JavaScript</span></div>
+            </div>
+            <div class="reveal relative flex justify-center">
+                <div class="absolute -inset-6 bg-purple-300/30 blur-3xl rounded-full"></div>
+                <div class="relative glass rounded-[2rem] p-4 shadow-2xl"><span
+                        class="absolute -left-12 top-14 glass px-4 py-3 rounded-xl text-sm font-bold">● Data
+                        Science</span><span
+                        class="absolute -right-12 bottom-20 glass px-4 py-3 rounded-xl text-sm font-bold text-emerald-600">●
+                        Available</span><img src="assets/img/profile_extract-000.png" alt="Tan Vouchleang"
+                        class="w-80 h-96 object-cover rounded-[1.5rem]"></div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-5 py-16">
+            <div class="text-center mb-10">
+                <p class="mono text-purple-600">WHAT I ACHIEVE</p>
+                <h2 class="text-4xl font-black mt-2">Achievements</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-4">
+                <div class="glass rounded-3xl p-6 reveal">
+                    <p class="text-3xl font-black text-purple-600">3.5+</p>
+                    <p class="text-gray-500">GPA</p>
+                </div>
+                <div class="glass rounded-3xl p-6 reveal">
+                    <p class="text-3xl font-black text-purple-600">5+</p>
+                    <p class="text-gray-500">Projects</p>
+                </div>
+                <div class="glass rounded-3xl p-6 reveal">
+                    <p class="text-3xl font-black text-purple-600">B2</p>
+                    <p class="text-gray-500">English Level</p>
+                </div>
+                <div class="glass rounded-3xl p-6 reveal">
+                    <p class="text-3xl font-black text-purple-600">A</p>
+                    <p class="text-gray-500">BACII Grade</p>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-5 py-16">
+            <div class="text-center reveal">
+                <p class="text-purple-600 mono">WHAT I DO</p>
+                <h2 class="text-4xl font-black mt-2">Build insight from data</h2>
+            </div>
+            <div class="grid md:grid-cols-4 gap-5 mt-10">
+                <div class="glass card-hover rounded-3xl p-6">
+                    <h3 class="font-bold text-xl">Programming</h3>
+                    <p class="text-gray-500 mt-3">Python, R, C/C++, JavaScript, and SQL fundamentals.</p>
+                </div>
+                <div class="glass card-hover rounded-3xl p-6">
+                    <h3 class="font-bold text-xl">Analysis</h3>
+                    <p class="text-gray-500 mt-3">Explore datasets, find patterns, and communicate conclusions.</p>
+                </div>
+                <div class="glass card-hover rounded-3xl p-6">
+                    <h3 class="font-bold text-xl">Math Thinking</h3>
+                    <p class="text-gray-500 mt-3">Strong analytical foundation from teaching mathematics.</p>
+                </div>
+                <div class="glass card-hover rounded-3xl p-6">
+                    <h3 class="font-bold text-xl">Frontend</h3>
+                    <p class="text-gray-500 mt-3">Clean interface design using HTML, CSS, and Tailwind.</p>
+                </div>
+            </div>
+        </section>
+        <section class="mx-auto my-16 max-w-6xl px-5">
+            <div class="rounded-[2rem] p-10 md:p-14 text-center" style="background:linear-gradient(135deg,var(--blue),var(--purple),var(--rose));">
+                <h2 class="text-4xl font-black text-white">Let’s Work Together</h2>
+                <p class="mt-4 text-lg text-white/90 max-w-2xl mx-auto">I’m interested in data science, analytics, web
+                    projects, and collaborative learning opportunities.</p>
+                <div class="mt-8 flex justify-center gap-4 flex-wrap"><a
+                        class="bg-white/90 text-gray-800 px-6 py-3 rounded-xl font-bold" href="#contact">Get In Touch</a><a
+                        class="border border-white/70 text-white px-6 py-3 rounded-xl font-bold"
+                        href="assets/Tan_Vouchleang_CV.pdf">Download CV</a></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- About me -->
+
+    <main class="min-h-screen">
+        <section class="max-w-7xl mx-auto px-5 py-20 grid lg:grid-cols-[.8fr_1.2fr] gap-10 items-center" id="about">
+            <div class="reveal glass rounded-[2rem] p-4"><img src="assets/img/achievement.jpeg"
+                    class="rounded-[1.5rem] w-full h-auto" alt="Tan Vouchleang"></div>
+            <div class="reveal">
+                <p class="mono text-purple-600">ABOUT ME</p>
+                <h1 class="text-5xl font-black mt-3 gradient-text">Curious, analytical, and impact-driven.</h1>
+                <p class="text-gray-600 mt-6 text-lg leading-8">Motivated Data Science student with a passion for
+                    transforming data into meaningful insights. My mathematics teaching background helps me explain
+                    complex ideas clearly and solve problems logically.</p>
+                <div class="age-counter">
+                    <p class="age-label">Age</p>
+                    <h2 id="ageDisplay">Loading...</h2>
+                    <span class="age-hint">Click to change unit</span>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-4 mt-8">
+                    <div class="glass rounded-2xl p-5">
+                        <p class="text-gray-500">Nationality</p>
+                        <h3 class="font-bold text-xl">Cambodian</h3>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <p class="text-gray-500">Location</p>
+                        <h3 class="font-bold text-xl">Phnom Penh</h3>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <p class="text-gray-500">Languages</p>
+                        <h3 class="font-bold text-xl">Khmer, English B2, French B1</h3>
+                    </div>
+                    <div class="glass rounded-2xl p-5">
+                        <p class="text-gray-500">Goal</p>
+                        <h3 class="font-bold text-xl">Data Scientist</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="max-w-7xl mx-auto px-5 pb-20">
+            <div class="glass rounded-[2rem] p-8 reveal">
+                <h2 class="text-3xl font-black mb-6">Experience</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-blue-400 pl-5">
+                        <h3 class="text-xl font-bold">Mathematics Teacher</h3>
+                        <p class="text-purple-600">Mekun Academy · 2025–Present</p>
+                        <p class="text-gray-500 mt-2">Teaching mathematical concepts and building logical skills.</p>
+                    </div>
+                    <div class="border-l-4 border-orange-400 pl-5">
+                        <h3 class="text-xl font-bold">Group Leader</h3>
+                        <p class="text-purple-600">IYF Korean Camp · 23 August 2025</p>
+                        <p class="text-gray-500 mt-2">Led group coordination and collaboration.</p>
+                    </div>
+                    <div class="border-l-4 border-red-400 pl-5">
+                        <h3 class="text-xl font-bold">AMS Volunteer</h3>
+                        <p class="text-purple-600">Scientific Day · 04-05 June 2026</p>
+                        <p class="text-gray-500 mt-2">Sharing information about AMS department to high school students.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Education -->
+    <main class="min-h-screen">
+        <section class="max-w-6xl mx-auto px-5 py-20" id="education">
+            <p class="mono text-purple-600 reveal">ACADEMIC JOURNEY</p>
+            <h1 class="text-5xl font-black mt-3 gradient-text reveal">Education & Achievements</h1>
+            <div class="mt-12 space-y-6">
+                <div class="glass card-hover rounded-3xl p-7 reveal">
+                    <p class="text-purple-600 font-bold">2024–Present</p>
+                    <h2 class="text-2xl font-black mt-2">Institute of Technology of Cambodia</h2>
+                    <p class="text-gray-600 mt-2">Data Science Student</p>
+                    <ul class="text-gray-600 mt-2 list-disc list-inside space-y-1">
+                        <li>Year 3 (2025-2026): GPA 4.0</li>
+                        <li>Year 2 (2024-2025): GPA 3.5</li>
+                        <li>Year 1 (2023-2024): GPA 3.5</li>
+                    </ul>
+                </div>
+                <div class="glass card-hover rounded-3xl p-7 reveal">
+                    <p class="text-purple-600 font-bold">2021–2023</p>
+                    <h2 class="text-2xl font-black mt-2">Sovannaphumi School</h2>
+                    <ul class="text-gray-600 mt-2 list-disc list-inside space-y-1">
+                        <li>BACII 2023: Grade “A”</li>
+                        <li>Top 3 in STEM Competition (2021-2022)</li>
+                        <li>Top 5 in Mathematics Outstanding Student (2021-2022)</li>
+                    </ul>
+                </div>
+                <div class="glass card-hover rounded-3xl p-7 reveal">
+                    <p class="text-purple-600 font-bold">2018–2020</p>
+                    <h2 class="text-2xl font-black mt-2">Future Bright International School</h2>
+                    <p class="text-gray-600 mt-2">Lower Secondary Examination (2020): Grade “Very Good”</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Skills -->
+
+    <main class="min-h-screen">
+        <section class="max-w-7xl mx-auto px-5 py-20" id="skills">
+            <p class="mono text-purple-600 reveal">SKILL SET</p>
+            <h1 class="text-5xl font-black mt-3 gradient-text reveal">Tools I use to solve problems</h1>
+            <div class="grid lg:grid-cols-2 gap-6 mt-12">
+                <div class="glass rounded-3xl p-7 reveal">
+                    <h2 class="text-2xl font-black mb-6">Technical Skills</h2>
+                    <div class="space-y-5">
+                        <div>
+                            <div class="flex justify-between"><span>Python</span><span>90%</span></div>
+                            <div class="skill-bar mt-2"><span style="width:90%"></span></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between"><span>MySQL</span><span>90%</span></div>
+                            <div class="skill-bar mt-2"><span style="width:90%"></span></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between"><span>HTML & CSS & JavaScript</span><span>80%</span></div>
+                            <div class="skill-bar mt-2"><span style="width:80%"></span></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between"><span>C / C++</span><span>80%</span></div>
+                            <div class="skill-bar mt-2"><span style="width:80%"></span></div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between"><span>R</span><span>70%</span></div>
+                            <div class="skill-bar mt-2"><span style="width:70%"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div class="glass card-hover rounded-3xl p-6 reveal">
+                        <h3 class="font-bold text-xl">Data Analysis</h3>
+                        <p class="text-gray-500 mt-2">Cleaning, exploring, and interpreting datasets.</p>
+                    </div>
+                    <div class="glass card-hover rounded-3xl p-6 reveal">
+                        <h3 class="font-bold text-xl">Mathematics</h3>
+                        <p class="text-gray-500 mt-2">Strong logic foundation for data science.</p>
+                    </div>
+                    <div class="glass card-hover rounded-3xl p-6 reveal">
+                        <h3 class="font-bold text-xl">Basic Computer</h3>
+                        <p class="text-gray-500 mt-2">Productivity tools and workflows.</p>
+                    </div>
+                    <div class="glass card-hover rounded-3xl p-6 reveal">
+                        <h3 class="font-bold text-xl">Communication</h3>
+                        <p class="text-gray-500 mt-2">Clear explanation from teaching experience.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Projects -->
+    <main class="min-h-screen">
+        <section class="max-w-7xl mx-auto px-5 py-20" id="projects">
+            <p class="mono text-purple-600 reveal">PORTFOLIO</p>
+            <h1 class="text-5xl font-black mt-3 gradient-text reveal">Projects</h1>
+            <p class="text-gray-600 mt-5 max-w-2xl reveal">Academic and self-learning projects in data, programming,
+                numerical methods, and management systems. Every card opens the related GitHub repository.</p>
+            <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12"><a data-tilt
+                    href="https://github.com/Yuuki-Haruka/world-happiness-record" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/happy-family.png" alt="Happy Family">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">World Happiness Record</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Exploratory data analysis of happiness indicators.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">Data · Analysis</p>
+                    </div>
+                </a><a data-tilt href="https://github.com/Yuuki-Haruka/olympic-medal" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full bg-white flex items-center justify-center overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/olympics.png" alt="" Olympics>
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">Olympics Medals</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Dataset project exploring medal patterns.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">Data · Visualization</p>
+                    </div>
+                </a><a data-tilt href="https://github.com/Yuuki-Haruka/small-clothes-shop-management" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full flex items-center justify-center overflow-hidden">
+                        <img src="./assets/img/clothes.png" alt="Clothes Shop">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">Mini Clothes Management System</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Small clothes shop management system.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">System · C/C++</p>
+                    </div>
+                </a><a data-tilt href="https://github.com/Yuuki-Haruka/numerical-analysis-root-finding" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/num-analysis.png" alt="Numerical Analysis">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">Numerical Analysis - Root Finding</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Numerical methods for solving roots.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">Math · Python</p>
+                    </div>
+                </a><a data-tilt href="https://bacll-grade-prediction-wgojdp4yevbdkly2kqg8xy.streamlit.app"
+                    target="_blank" class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/bacll.png" alt="Bacll A">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">BacII Grade Prediction</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Prediction-oriented project for exam grades.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">ML · Python</p>
+                    </div>
+                </a><a data-tilt href="https://carbon-emissions-prediction.streamlit.app" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/carbon.png" alt="Bacll A">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">Carbon Footprint Prediction</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Prediction-oriented project for carbon emission.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">ML · Python</p>
+                    </div>
+                </a></div>
+        </section>
+    </main>
+
+    <!-- Contact -->
+    <main class="min-h-screen" id="contact">
+        <section class="max-w-7xl mx-auto px-5 py-20">
+            <div class="text-center reveal">
+                <p class="mono text-purple-600">CONTACT</p>
+                <h1 class="text-5xl md:text-6xl font-black mt-3"><span class="gradient-text">Contact</span> With Me</h1>
+                <div class="underline-glow"></div>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14"><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#a855f7" href="https://github.com/Yuuki-Haruka" target="_blank"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-brands fa-github"></i></span><span><span
+                            class="block text-2xl font-black">GitHub</span><span
+                            class="block text-gray-500 mt-2">Yuuki-Haruka</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#0ea5e9" href="https://www.linkedin.com/in/vouchleang-tan-29a491376/"
+                    target="_blank"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-brands fa-linkedin"></i></span><span><span
+                            class="block text-2xl font-black">LinkedIn</span><span
+                            class="block text-gray-500 mt-2">vouchleang-tan</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#22d3ee" href="https://t.me/tanvouchleang" target="_blank"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-brands fa-telegram"></i></span><span><span
+                            class="block text-2xl font-black">Telegram</span><span
+                            class="block text-gray-500 mt-2">@tanvouchleang</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#e879f9" href="mailto:tanvouchleang@gmail.com"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-solid fa-envelope"></i></span><span><span
+                            class="block text-2xl font-black">Email</span><span
+                            class="block text-gray-500 mt-2">tanvouchleang@gmail.com</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#22c55e" href="tel:+855768999998"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-solid fa-phone"></i></span><span><span
+                            class="block text-2xl font-black">Phone</span><span class="block text-gray-500 mt-2">+855 76
+                            899 9998</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#fb923c" href="assets/Tan_Vouchleang_CV.pdf" target="_blank"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-solid fa-file-arrow-down"></i></span><span><span
+                            class="block text-2xl font-black">CV / Resume</span><span
+                            class="block text-gray-500 mt-2">Open my resume</span></span></a><a data-tilt
+                    class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
+                    style="--accent:#6366f1" href="#projects"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-solid fa-code"></i></span><span><span
+                            class="block text-2xl font-black">Projects</span><span class="block text-gray-500 mt-2">View
+                            portfolio work</span></span></a>
+                <div data-tilt class="contact-card rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal pulse-glow"
+                    style="--accent:#d946ef"><span
+                        class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
+                            class="fa-solid fa-star"></i></span><span><span
+                            class="block text-2xl font-black">Available</span><span
+                            class="block text-gray-500 mt-2">Open to internships</span></span></div>
+            </div>
+            <p class="text-center text-gray-600 mt-14 text-xl reveal">♡ Let’s build something incredible together! ♡</p>
+        </section>
+    </main>
+
+    <footer class="border-t glass" style="border-radius:0;">
+        <div class="max-w-7xl mx-auto px-5 py-12 grid md:grid-cols-4 gap-10">
+            <div>
+                <h2 class="text-xl font-black">Vouch<span class="text-purple-500">leang</span></h2>
+                <p class="text-gray-500 mt-3">Data Science student transforming curiosity into insight.</p>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Quick Links</h3>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#index">Home</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#about">About</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#education">Education</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#skills">Skills</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#projects">Project</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#contact">Contact</a>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Featured Projects</h3>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" target="_blank"
+                    href="https://github.com/Yuuki-Haruka/world-happiness-record">World Happiness Record</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" target="_blank"
+                    href="https://github.com/Yuuki-Haruka/olympic-medal">Olympics Medals</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" target="_blank"
+                    href="https://github.com/Yuuki-Haruka/numerical-analysis-root-finding">Root Finding</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" target="_blank"
+                    href="https://bacll-grade-prediction-wgojdp4yevbdkly2kqg8xy.streamlit.app">Bacll Grade
+                    Prediction</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" target="_blank"
+                    href="https://github.com/Yuuki-Haruka/small-clothes-shop-management">Clothes Shop Management</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="#projects">More
+                    ...</a>
+            </div>
+            <div>
+                <h3 class="font-bold mb-3">Contact</h3>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="https://t.me/tanvouchleang" target="_blank"><i
+                        class="fa-brands fa-telegram mr-2"></i>Telegram</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="https://github.com/Yuuki-Haruka" target="_blank"><i
+                        class="fa-brands fa-github mr-2"></i>GitHub</a>
+                <a class="block text-gray-500 hover:text-purple-600 py-1" href="https://www.linkedin.com/in/vouchleang-tan-29a491376/" target="_blank"><i
+                        class="fa-brands fa-linkedin mr-2"></i>LinkedIn</a>
+            </div>
+        </div>
+        <p class="text-center text-gray-500 pb-8">© 2026 Tan Vouchleang · Data Science </p>
+    </footer>
+    <script>
+        (function () {
+            var root = document.documentElement;
+            var key = 'vl-theme';
+
+            function apply(theme) {
+                root.setAttribute('data-theme', theme);
+                document.querySelectorAll('.theme-icon').forEach(function (icon) {
+                    icon.className = 'theme-icon fa-solid ' + (theme === 'dark' ? 'fa-sun' : 'fa-moon');
+                });
+                document.querySelectorAll('.theme-toggle-label').forEach(function (label) {
+                    label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+                });
+            }
+
+            apply(root.getAttribute('data-theme') || 'light');
+
+            document.addEventListener('click', function (e) {
+                var btn = e.target.closest('.theme-toggle-btn');
+                if (!btn) return;
+                var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+                var next = current === 'dark' ? 'light' : 'dark';
+                apply(next);
+                localStorage.setItem(key, next);
+            });
+        })();
+    </script>
+    <script src="assets/js/main.js"></script>
+    <script>
+    (function () {
+        var navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                navLinks.forEach(function (l) { l.classList.remove('active'); });
+                link.classList.add('active');
+            });
+        });
+    })();
+</script>
+</body>
+
+</html>
