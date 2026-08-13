@@ -8,13 +8,6 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script>
-        (function () {
-            var saved = localStorage.getItem('vl-theme');
-            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
-        })();
-    </script>
 </head>
 
 <body class="grid-bg">
@@ -306,7 +299,8 @@
             <p class="mono text-purple-600 reveal">PORTFOLIO</p>
             <h1 class="text-5xl font-black mt-3 gradient-text reveal">Projects</h1>
             <p class="text-gray-600 mt-5 max-w-2xl reveal">Academic and self-learning projects in data, programming,
-                numerical methods, and management systems. Every card opens the related GitHub repository.</p>
+                numerical methods, and management systems.</p>
+                <!-- World Happiness Record -->
             <div class="grid md:grid-cols-3 lg:grid-cols-3 gap-6 mt-12"><a data-tilt
                     href="https://github.com/Yuuki-Haruka/world-happiness-record" target="_blank"
                     class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
@@ -321,6 +315,7 @@
                         <p class="text-gray-500 mt-2">Exploratory data analysis of happiness indicators.</p>
                         <p class="mono text-sm text-purple-600 mt-4">Data · Analysis</p>
                     </div>
+                    <!-- Olympics Medals -->
                 </a><a data-tilt href="https://github.com/Yuuki-Haruka/olympic-medal" target="_blank"
                     class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
                     <div class="h-36 w-full bg-white flex items-center justify-center overflow-hidden rounded-t-3xl">
@@ -334,6 +329,7 @@
                         <p class="text-gray-500 mt-2">Dataset project exploring medal patterns.</p>
                         <p class="mono text-sm text-purple-600 mt-4">Data · Visualization</p>
                     </div>
+                    <!-- Clothes Shop Management -->
                 </a><a data-tilt href="https://github.com/Yuuki-Haruka/small-clothes-shop-management" target="_blank"
                     class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
                     <div class="h-36 w-full flex items-center justify-center overflow-hidden">
@@ -347,6 +343,7 @@
                         <p class="text-gray-500 mt-2">Small clothes shop management system.</p>
                         <p class="mono text-sm text-purple-600 mt-4">System · C/C++</p>
                     </div>
+                    <!-- Numerical Analysis -->
                 </a><a data-tilt href="https://github.com/Yuuki-Haruka/numerical-analysis-root-finding" target="_blank"
                     class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
                     <div class="h-36 w-full overflow-hidden rounded-t-3xl">
@@ -360,6 +357,7 @@
                         <p class="text-gray-500 mt-2">Numerical methods for solving roots.</p>
                         <p class="mono text-sm text-purple-600 mt-4">Math · Python</p>
                     </div>
+                    <!-- Bacll Grade Calculator -->
                 </a><a data-tilt href="https://bacll-grade-prediction-wgojdp4yevbdkly2kqg8xy.streamlit.app"
                     target="_blank" class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
                     <div class="h-36 w-full overflow-hidden rounded-t-3xl">
@@ -373,10 +371,11 @@
                         <p class="text-gray-500 mt-2">Prediction-oriented project for exam grades.</p>
                         <p class="mono text-sm text-purple-600 mt-4">ML · Python</p>
                     </div>
+                    <!-- Carbon Footprint Prediction -->
                 </a><a data-tilt href="https://carbon-emissions-prediction.streamlit.app" target="_blank"
                     class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
                     <div class="h-36 w-full overflow-hidden rounded-t-3xl">
-                        <img src="./assets/img/carbon.png" alt="Bacll A">
+                        <img src="./assets/img/carbon.png" alt="Carbon Footprint">
                     </div>
                     <div class="p-6 relative">
                         <div class="flex items-start justify-between gap-4">
@@ -386,13 +385,27 @@
                         <p class="text-gray-500 mt-2">Prediction-oriented project for carbon emission.</p>
                         <p class="mono text-sm text-purple-600 mt-4">ML · Python</p>
                     </div>
+                    <!-- Cat or Dog -->
+                </a><a data-tilt href="https://dog-cat-recognition.streamlit.app" target="_blank"
+                    class="project-card glass card-hover rounded-3xl overflow-hidden reveal group">
+                    <div class="h-36 w-full overflow-hidden rounded-t-3xl">
+                        <img src="./assets/img/dog_cat.png" alt="Dog Cat">
+                    </div>
+                    <div class="p-6 relative">
+                        <div class="flex items-start justify-between gap-4">
+                            <h2 class="text-xl font-black">Dog and Cat Recognition</h2><span
+                                class="project-arrow text-purple-600 text-2xl">↗</span>
+                        </div>
+                        <p class="text-gray-500 mt-2">Recognition project for dogs and cats.</p>
+                        <p class="mono text-sm text-purple-600 mt-4">ML · Python</p>
+                    </div>
                 </a></div>
         </section>
     </main>
 
     <!-- Contact -->
-    <main class="min-h-screen" id="contact">
-        <section class="max-w-7xl mx-auto px-5 py-20">
+    <main class="min-h-screen" >
+        <section class="max-w-7xl mx-auto px-5 py-20" id="contact">
             <div class="text-center reveal">
                 <p class="mono text-purple-600">CONTACT</p>
                 <h1 class="text-5xl md:text-6xl font-black mt-3"><span class="gradient-text">Contact</span> With Me</h1>
@@ -434,8 +447,8 @@
                     style="--accent:#fb923c" href="assets/Tan_Vouchleang_CV.pdf" target="_blank"><span
                         class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
                             class="fa-solid fa-file-arrow-down"></i></span><span><span
-                            class="block text-2xl font-black">CV / Resume</span><spans
-                            class="block text-gray-500 mt-2">Open my resume</spans></span></a><a data-tilt
+                            class="block text-2xl font-black">CV / Resume</span><span
+                            class="block text-gray-500 mt-2">Open my resume</span></span></a><a data-tilt
                     class="contact-card shine rounded-3xl p-6 min-h-40 flex gap-5 items-center reveal"
                     style="--accent:#6366f1" href="#projects"><span
                         class="icon-box grid place-items-center w-20 h-20 rounded-2xl text-4xl"><i
@@ -496,45 +509,7 @@
         </div>
         <p class="text-center text-gray-500 pb-8">© 2026 Tan Vouchleang · Data Science </p>
     </footer>
-    <script>
-        (function () {
-            var root = document.documentElement;
-            var key = 'vl-theme';
-
-            function apply(theme) {
-                root.setAttribute('data-theme', theme);
-                document.querySelectorAll('.theme-icon').forEach(function (icon) {
-                    icon.className = 'theme-icon fa-solid ' + (theme === 'dark' ? 'fa-sun' : 'fa-moon');
-                });
-                document.querySelectorAll('.theme-toggle-label').forEach(function (label) {
-                    label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
-                });
-            }
-
-            apply(root.getAttribute('data-theme') || 'light');
-
-            document.addEventListener('click', function (e) {
-                var btn = e.target.closest('.theme-toggle-btn');
-                if (!btn) return;
-                var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
-                var next = current === 'dark' ? 'light' : 'dark';
-                apply(next);
-                localStorage.setItem(key, next);
-            });
-        })();
-    </script>
     <script src="assets/js/main.js"></script>
-    <script>
-    (function () {
-        var navLinks = document.querySelectorAll('.nav-link');
-        navLinks.forEach(function (link) {
-            link.addEventListener('click', function () {
-                navLinks.forEach(function (l) { l.classList.remove('active'); });
-                link.classList.add('active');
-            });
-        });
-    })();
-</script>
 </body>
 
 </html>

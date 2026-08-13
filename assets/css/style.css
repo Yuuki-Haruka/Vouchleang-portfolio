@@ -514,6 +514,17 @@ body {
 [data-theme="dark"] .datetime .divider {
   color: #666;
 }
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #9333ea;
+}
+
+.nav-link.active {
+    color: #9333ea;
+}
 
 /* Tailwind text-color utilities used in the markup, tuned for the dark bg */
 [data-theme="dark"] .text-gray-700 { color: var(--text); }

@@ -82,3 +82,62 @@ function updateDateTime() {
 }
 updateDateTime();
 setInterval(updateDateTime, 1000);
+(function () {
+            var saved = localStorage.getItem('vl-theme');
+            var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+        })();
+(function () {
+            var root = document.documentElement;
+            var key = 'vl-theme';
+
+            function apply(theme) {
+                root.setAttribute('data-theme', theme);
+                document.querySelectorAll('.theme-icon').forEach(function (icon) {
+                    icon.className = 'theme-icon fa-solid ' + (theme === 'dark' ? 'fa-sun' : 'fa-moon');
+                });
+                document.querySelectorAll('.theme-toggle-label').forEach(function (label) {
+                    label.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+                });
+            }
+
+            apply(root.getAttribute('data-theme') || 'light');
+
+            document.addEventListener('click', function (e) {
+                var btn = e.target.closest('.theme-toggle-btn');
+                if (!btn) return;
+                var current = root.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+                var next = current === 'dark' ? 'light' : 'dark';
+                apply(next);
+                localStorage.setItem(key, next);
+            });
+        })();
+
+(function () {
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function updateActiveLink() {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+
+            if (window.scrollY >= sectionTop) {
+                current = section.id;
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+
+            if (link.getAttribute('href') === '#' + current) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', updateActiveLink);
+
+    updateActiveLink();
+})();
